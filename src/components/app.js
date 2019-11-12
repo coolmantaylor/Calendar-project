@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Weekday from "./weekday"
+import DayBlock from "./dayBlock"
 
 export default class App extends Component {
   renderDays = () => {
@@ -25,7 +26,7 @@ export default class App extends Component {
 
 
           <div className="blocks-wrapper">
-
+            <DayBlock date="27" />
           </div>
         </div>
 
