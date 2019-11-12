@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 
+import Weekday from "./weekday"
+
 export default class App extends Component {
+  renderDays = () => {
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thusday", "Friday", "Saturday"]
+    return days.map(day => <Weekday day= {day} />)
+  }
+
   render() {
     return (
       <div className='app'>
@@ -13,7 +20,7 @@ export default class App extends Component {
 
         <div className="calender-wrapper">
           <div className="days_wrapper">
-
+           {this.renderDays()}
           </div>
 
 
